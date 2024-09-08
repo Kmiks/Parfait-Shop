@@ -1,0 +1,165 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ad9587; /* Creamy beige background */
+    color: #4e342e; /* Dark brown text color */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+header {
+    width: 100%;
+    background-color: #6d4c41; /* Medium brown background for header */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #fff; /* White text color */
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between; /* Align items container and running order side by side */
+    width: 100%;
+    max-width: 1200px; /* Max width for larger screens */
+    margin-top: 20px;
+}
+
+.items-container {
+    width: 70%; /* Width of the items container */
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 15px; /* Space between items */
+}
+
+.container {
+    background-color: #fff; /* White background for containers */
+    border: 1px solid #6b4b40; /* Light brown border */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(111, 78, 55, 0.1); /* Light brown shadow */
+    width: calc(50% - 15px); /* Two items per row with gap */
+    box-sizing: border-box; /* Include padding in the container's width */
+}
+
+.image {
+    width: 100%; /* Full width of the container */
+    height: 320px; /* Fixed height to create a square aspect ratio */
+    margin-bottom: 5px; /* Space between the image and content below */
+    padding: 10px; /* Padding around the image */
+    box-sizing: border-box; /* Include padding in the element's dimensions */
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+}
+
+.name_sundae {
+    background-color: #d7ccc8; /* Light brown background */
+    border-bottom: 1px solid #bcaaa4; /* Medium light brown border */
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #4e342e; /* Dark brown text color */
+    position: relative;
+}
+
+.name_sundae .x {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.rest {
+    padding: 10px;
+}
+
+.price {
+    font-size: 18px;
+    color: #4e342e; /* Dark brown text color */
+}
+
+.des {
+    color: #8d6e63; /* Soft brown text color */
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.order {
+    background-color: #6d4c41; /* Medium brown button */
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.order:hover {
+    background-color: #5b3e28; /* Darker brown on hover */
+}
+
+.input {
+    width: 60px;
+    padding: 5px;
+}
+
+#runningorder {
+    width: 30%; /* Fixed width for the running order section */
+    background-color: #be9d82; /* White background */
+    border: 1px solid #865d4e; /* Light brown border */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(111, 78, 55, 0.1); /* Light brown shadow */
+    padding: 20px;
+    margin-left: 15px; /* Space between items and running order */
+    box-sizing: border-box; /* Include padding in the element's dimensions */
+    text-align: center;
+}
+
+#order-container {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #d7ccc8; /* Light brown border */
+}
+
+#invalid {
+    color: #d44b6d; /* Dark pink text color */
+    font-weight: bold;
+}
+
+.buttons {
+    background-color: #6d4c41; /* Medium brown button */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.buttons:hover {
+    background-color: #5b3e28; /* Darker brown on hover */
+}
+
+h2, h3 {
+    margin: 10px 0;
+}

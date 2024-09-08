@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Bunny Parfaits</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Parfait Shop!</h1>
+    </header>
+    <div class="main-container">
+        <div class="items-container">
+            <div class="container">
+                <div class="name_sundae">Raspberry Bunny Parfait
+                    <div class="x">X</div>
+                </div>
+                <div class="image">
+                    <img src="sundae4.png" alt="Raspberry Bunny Parfait">
+                </div>
+                <div class="rest">
+                    <p class="price">$7.99</p>
+                    <p class="des">A raspberry concoction with orange sponge cake, raspberry sherbet, and chocolate ice cream.</p>
+                    <button onclick="order(1)" class="order">Order</button>
+                    <input type="number" id="choice1" class="input" min="1" value="1">
+                </div>
+            </div>
+            <div class="container">
+                <div class="name_sundae">Matcha Bunny Parfait
+                    <div class="x">X</div>
+                </div>
+                <div class="image">
+                    <img src="sundae5.png" alt="Matcha Bunny Parfait">
+                </div>
+                <div class="rest">
+                    <p class="price">$7.99</p>
+                    <p class="des">Pistachio ice cream, caramel gelatin, and chocolate ice cream.</p>
+                    <button onclick="order(2)" class="order">Order</button>
+                    <input type="number" id="choice2" class="input" min="1" value="1">
+                </div>
+            </div>
+            <div class="container">
+                <div class="name_sundae">Crème Brûlée Bunny Parfait
+                    <div class="x">X</div>
+                </div>
+                <div class="image">
+                    <img src="sundae6.png" alt="Crème Brûlée Bunny Parfait">
+                </div>
+                <div class="rest">
+                    <p class="price">$7.99</p>
+                    <p class="des">Vanilla ice cream with white wine gelatin and crème brûlée accents.</p>
+                    <button onclick="order(3)" class="order">Order</button>
+                    <input type="number" id="choice3" class="input" min="1" value="1">
+                </div>
+            </div>
+            <div class="container">
+                <div class="name_sundae">Choco Bunny Parfait
+                    <div class="x">X</div>
+                </div>
+                <div class="image">
+                    <img src="sundae7.png" alt="Choco Bunny Parfait">
+                </div>
+                <div class="rest">
+                    <p class="price">$7.99</p>
+                    <p class="des">Three layers of chocolate ice cream, mousse, and cake.</p>
+                    <button onclick="order(4)" class="order">Order</button>
+                    <input type="number" id="choice4" class="input" min="1" value="1">
+                </div>
+            </div>
+        </div>
+        <div id="runningorder">
+            <h2>Running Order</h2>
+            <div id="order-container">
+                <ul id="order-list"></ul>
+            </div>
+            <p id="invalid"></p>
+            <h3 id="subtotal">Sub Total: $0</h3>
+            <h3 id="tax">Tax (4.712%): $0</h3>
+            <button onclick="calculateTotal()" class="buttons">Calculate Total</button>
+            <h3 id="grandtotal"></h3>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
